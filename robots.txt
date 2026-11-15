@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /uploads/
+
+# Public content is free to index. Coordinator tools and uploaded
+# report photos are private and must not be crawled.
