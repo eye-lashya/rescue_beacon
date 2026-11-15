@@ -1,0 +1,150 @@
+// Before-and-after rescue stories.
+// The artwork in /public/images is illustrative (generated SVG). Swap in real,
+// consent-cleared photographs from your shelter to publish genuine case studies.
+
+export const TRANSFORMATIONS = [
+  {
+    id: 'moti',
+    name: 'Moti',
+    species: 'Dog',
+    location: 'Bengaluru, Karnataka',
+    period: 'Rescued March 2025',
+    story:
+      'Moti was found dragging a hind leg after a scooter hit him and left. Local feeders called a rescue team, who splinted the fracture and started pain relief the same evening. Eight weeks of physiotherapy later he was walking — and the family who fostered him adopted him.',
+    tags: ['Road accident', 'Fracture', 'Adopted'],
+    before: '/images/story-moti-before.svg',
+    after: '/images/story-moti-after.svg',
+  },
+  {
+    id: 'whiskers',
+    name: 'Whiskers',
+    species: 'Cat',
+    location: 'Mumbai, Maharashtra',
+    period: 'Rescued November 2025',
+    story:
+      'A four-week-old kitten with a badly infected eye was found behind a bookshop. The infection had spread from a scratch, and she could barely open the eye. Daily cleaning, antibiotics and good food saved her sight. She now supervises the shop’s customers from the counter.',
+    tags: ['Kitten', 'Eye infection', 'Recovered'],
+    before: '/images/story-whiskers-before.svg',
+    after: '/images/story-whiskers-after.svg',
+  },
+  {
+    id: 'lakshmi',
+    name: 'Lakshmi',
+    species: 'Cow',
+    location: 'Jaipur, Rajasthan',
+    period: 'Rescued August 2024',
+    story:
+      'Lakshmi had been grazing on a garbage heap and swallowed plastic, causing a dangerous bloat. A gaushala team treated her for three weeks, cleared the obstruction and put her on a proper diet. She now lives with a herd and has a name that the whole neighbourhood knows.',
+    tags: ['Stray cattle', 'Plastic ingestion', 'Gaushala'],
+    before: '/images/story-lakshmi-before.svg',
+    after: '/images/story-lakshmi-after.svg',
+  },
+  {
+    id: 'bhola',
+    name: 'Bhola',
+    species: 'Dog',
+    location: 'New Delhi, Delhi',
+    period: 'Rescued January 2025',
+    story:
+      'Bhola had grown up with a wire tied around his neck, which had embedded into the skin. A passer-by photographed him and reported the location. The wire was removed under anaesthesia, the wound healed over a month, and he was vaccinated and sterilised before returning to his territory — where a feeder now keeps an eye on him.',
+    tags: ['Embedded wire', 'Wound care', 'CNVR'],
+    before: '/images/story-bhola-before.svg',
+    after: '/images/story-bhola-after.svg',
+  },
+  {
+    id: 'chinnu',
+    name: 'Chinnu',
+    species: 'Bird',
+    location: 'Ahmedabad, Gujarat',
+    period: 'Rescued January 2026',
+    story:
+      'During kite season, Chinnu was found tangled in manja — the glass-coated string that cuts birds mid-flight. The string had sliced into a wing. A bird rescue volunteer removed it, cleaned the wound and hand-fed him for ten days. He was released back into his flock once he could fly again.',
+    tags: ['Kite string', 'Wing injury', 'Released'],
+    before: '/images/story-chinnu-before.svg',
+    after: '/images/story-chinnu-after.svg',
+  },
+  {
+    id: 'tuffy',
+    name: 'Tuffy',
+    species: 'Dog',
+    location: 'Chennai, Tamil Nadu',
+    period: 'Rescued June 2024',
+    story:
+      'Tuffy was abandoned as a puppy with severe mange and a maggot wound on his back. Treatment took eight weeks: medicated baths, wound dressing, good food and a lot of patience. He now lives with the volunteer who nursed him and has a wardrobe of bandanas.',
+    tags: ['Puppy', 'Mange', 'Adopted'],
+    before: '/images/story-tuffy-before.svg',
+    after: '/images/story-tuffy-after.svg',
+  },
+  {
+    id: 'dhanno',
+    name: 'Dhanno',
+    species: 'Donkey',
+    location: 'Kutch, Gujarat',
+    period: 'Rescued October 2025',
+    story:
+      'Dhanno carried bricks at a construction site with a rope halter that had cut deep into her muzzle. A passer-by photographed the wound and called a local welfare team, who treated the infection and persuaded the contractor to retire her. She now lives at a donkey sanctuary and walks freely with a small herd.',
+    tags: ['Working animal', 'Harness wound', 'Sanctuary'],
+    before: '/images/story-dhanno-before.svg',
+    after: '/images/story-dhanno-after.svg',
+  },
+  {
+    id: 'rani',
+    name: 'Rani',
+    species: 'Rabbit',
+    location: 'Pune, Maharashtra',
+    period: 'Rescued February 2026',
+    story:
+      'Rani was left in a small wire cage outside a pet shop that had closed down. Her nails had overgrown and she had lost fur on her feet. A foster home gave her a quiet room, unlimited hay and gentle handling. She now races laps around the sofa every evening.',
+    tags: ['Abandoned pet', 'Overgrown nails', 'Fostered'],
+    before: '/images/story-rani-before.svg',
+    after: '/images/story-rani-after.svg',
+  },
+  {
+    id: 'tara',
+    name: 'Tara',
+    species: 'Indian star tortoise',
+    location: 'Hyderabad, Telangana',
+    period: 'Rescued September 2024',
+    story:
+      'Tara was found in a sack at a bus stand, part of an illegal wildlife trade run. The forest department and a wildlife rescue centre treated her cracked shell and dehydration before releasing her into a protected habitat. She is tagged and monitored by the forest team.',
+    tags: ['Wildlife trade', 'Shell injury', 'Released'],
+    before: '/images/story-tara-before.svg',
+    after: '/images/story-tara-after.svg',
+  },
+  {
+    id: 'bittu',
+    name: 'Bittu',
+    species: 'Parakeet',
+    location: 'Lucknow, Uttar Pradesh',
+    period: 'Rescued December 2025',
+    story:
+      'Bittu was found stuck to a glue trap on a balcony, his wing feathers matted and torn. A bird rescuer removed the glue with warm oil, cleaned the skin and hand-fed him for two weeks. He was released near the same neighbourhood once his feathers grew back.',
+    tags: ['Glue trap', 'Feather damage', 'Released'],
+    before: '/images/story-bittu-before.svg',
+    after: '/images/story-bittu-after.svg',
+  },
+  {
+    id: 'sheru',
+    name: 'Sheru',
+    species: 'Dog',
+    location: 'Nagpur, Maharashtra',
+    period: 'Rescued July 2024',
+    story:
+      'Sheru was weak, pale and covered in ticks when a shopkeeper called for help. A vet treated him for tick fever and anaemia, and a feeder kept him fed through recovery. He put on weight, regained his bark, and now guards the same lane that once ignored him.',
+    tags: ['Tick fever', 'Anaemia', 'CNVR'],
+    before: '/images/story-sheru-before.svg',
+    after: '/images/story-sheru-after.svg',
+  },
+  {
+    id: 'kaveri',
+    name: 'Kaveri',
+    species: 'Cat',
+    location: 'Kochi, Kerala',
+    period: 'Rescued April 2025',
+    story:
+      'Kaveri knocked a pan of hot water off a stove and burned her flank. Her family rushed her to a vet instead of abandoning her; daily dressing changes took six weeks. She now has a scar, a soft bed and a habit of sitting on the counter, well away from the stove.',
+    tags: ['Burn injury', 'Wound care', 'Owned pet'],
+    before: '/images/story-kaveri-before.svg',
+    after: '/images/story-kaveri-after.svg',
+  },
+]

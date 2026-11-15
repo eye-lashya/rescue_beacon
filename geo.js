@@ -1,0 +1,28 @@
+const toRad = (deg) => (deg * Math.PI) / 180
+
+/** Great-circle distance in kilometres. */
+export function haversineKm(a, b) {
+  if (!a || !b) return null
+  const R = 6371
+  const dLat = toRad(b.lat - a.lat)
+  const dLng = toRad(b.lng - a.lng)
+  const lat1 = toRad(a.lat)
+  const lat2 = toRad(b.lat)
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2
+  return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)))
+}
+
+export function parseCoords(lat, lng) {
+  const la = Number(lat)
+  const ln = Number(lng)
+  if (!Number.isFinite(la) || !Number.isFinite(ln)) return null
+  if (la < -90 || la > 90 || ln < -180 || ln > 180) return null
+  return { lat: la, lng: ln }
+}
+
+export function formatDistance(km) {
+  if (km == null) return null
+  if (km < 1) return `${Math.max(50, Math.round((km * 1000) / 50) * 50)} m`
+  if (km < 10) return `${km.toFixed(1)} km`
+  return `${Math.round(km)} km`
+}
